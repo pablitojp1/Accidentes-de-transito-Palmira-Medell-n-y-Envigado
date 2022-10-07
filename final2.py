@@ -431,7 +431,7 @@ dic={'1':'Mon','2':'Tue','3':'Wed','4':'Thu','5':'Fri','6':'Sat','7':'Sun'}
 bodeguita['DIA SEMANA']=bodeguita['DIA SEMANA'].replace(dic)
 
 # Crear gráfica
-fig = px.bar(bodeguita[bodeguita['MES']==mess], x='DIA SEMANA', y=['ENVIGADO','PALMIRA','MEDELLIN'], barmode= 'group', title ='<b>Cantidad de accidentes según el Día de la Semana<b>',
+fig = px.bar(bodeguita[bodeguita['MES']==mess], x='DIA SEMANA', y=['PALMIRA','ENVIGADO','MEDELLIN'], barmode= 'group', title ='<b>Cantidad de accidentes según el Día de la Semana<b>',
              width=580, height=450)
 
 # Agregar detalles a la gráfica
