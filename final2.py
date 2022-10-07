@@ -244,8 +244,6 @@ elif indicadormed == 'Accidentes según el diseño de la vía':
     tramo_via = df9.groupby(['DISEÑO'])[['EXPEDIENTE']].count().sort_values('EXPEDIENTE', ascending = False).rename(columns={'EXPEDIENTE':'ACCIDENTES'})
     tramo_via['porcentaje'] = tramo_via.apply(lambda x: x.cumsum()/tramo_via['ACCIDENTES'].sum()) #Agregamos columna con el porcentaje acumulado segun la frecuencia de accidentes
     
-    # importar paquete
-    import plotly.graph_objects as go 
     
     # Se realiza gráfico de pareto
     fig = go.Figure([go.Bar(x=tramo_via.index, y=tramo_via['ACCIDENTES'], yaxis='y1', name='sessions id'),
