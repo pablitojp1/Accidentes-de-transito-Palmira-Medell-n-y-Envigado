@@ -4,5 +4,6 @@ streamlit
 datetime
 openpyxl
 Pydeck
+numpy
 
 
