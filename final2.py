@@ -37,7 +37,7 @@ def get_table_download_Medellin(df):
 st.set_page_config(layout="wide")
 
 # Título principal, h1 denota el estilo del título 1
-st.markdown("<h1 style='text-align: center; color: #951F0F;'>Accidentalidad Vial Palmira, Envigado y Medellín </h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #951F0F;'>Accidentalidad Vial Palmira, Envigado y Medellín en el año 2020 </h1>", unsafe_allow_html=True)
 
 # Carga bases de datos
 df1= pd.read_excel('Accidentes_de_transito_Palmira_2020.xlsx')
